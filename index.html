@@ -1,53 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon</title>
+  <title>Ki-Műhely</title>
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
-      height: 100vh;
-      background-color: blue; /* Fallback color */
-      background-image: url('kimuhely.jpg'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdd835;
+      color: #222;
       text-align: center;
-      color: white;
+      scroll-behavior: smooth;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for contrast */
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 90%;
+    header {
+      padding: 2rem 1rem;
+    }
+
+    .logo {
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin: 0;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
 
-    @media (max-width: 600px) {
-      body {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #FDCC3F; /* Ensures background color stays black on mobile */
-      }
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
 
-      h1 {
-        font-size: 1.5em;
-      }
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .services, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      color: #000;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery img {
+      width: 280px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 24px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      background-color: #000;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .card, .gallery img { width: 90%; }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <img src="műhely logó ki.jpg" alt="Ki-Műhely logó" class="logo" />
+    <p>Energiával, erővel, tudatossággal, harmóniával – indulj el a belső utadon!</p>
+  </header>
+
+  <section id="services">
+    <h2>Szolgáltatásaim</h2>
+    <div class="services">
+      <div class="card">
+        <h3>NLS állapotfelmérés és kezelés</h3>
+        <p>Modern kvantumtechnológia segítségével térképezzük fel testi-lelki állapotod és támogatjuk az öngyógyító folyamatokat.</p>
+      </div>
+      <div class="card">
+        <h3>Reiki kezelés</h3>
+        <p>Univerzális energiával történő harmonizálás, amely támogatja a belső egyensúlyt és nyugalmat.</p>
+      </div>
+      <div class="card">
+        <h3>Metamorf Masszázs</h3>
+        <p>Finom érintésekkel oldjuk a sejtszintű blokkokat és a múlt lenyomatait a gerinc reflexpontjain keresztül.</p>
+      </div>
+      <div class="card">
+        <h3>Frissítő svédmasszázs és köpölyözés</h3>
+        <p>Izomlazító, vérkeringés-fokozó kezelés, amit a köpöly technika tesz még hatékonyabbá.</p>
+      </div>
+      <div class="card">
+        <h3>Reflexológiás talpmasszázs</h3>
+        <p>A láb reflexzónáin keresztül támogatjuk a szervek működését és az energetikai egyensúlyt.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="gallery">
+    <h2>Galéria</h2>
+    <div class="gallery">
+      <img src="1.jpg" alt="Galéria kép 1">
+      <img src="2.jpg" alt="Galéria kép 2">
+      <img src="3.jpg" alt="Galéria kép 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Elérhetőség: Szolnok | 📞 +36 30 300 0293 | ✉️ muhelyki@gmail.com</p>
+    <a class="button" href="https://www.facebook.com/profile.php?id=61560905311555" target="_blank">Facebook oldal</a>
+  </footer>
 
 </body>
 </html>
