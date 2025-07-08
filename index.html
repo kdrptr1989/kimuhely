@@ -3,148 +3,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ki-Műhely</title>
+  <title>Ki-Műhely – Holisztikus kezelések Szolnokon | NLS kezelés, masszázs, reflexológia, olisztikus táplálkozás, metamorf masszázs</title>
+
+
+  <meta name="description" content="Ki-Műhely – Holisztikus kezelések Szolnokon: biorezonanciás NLS állapotfelmérés és kezelés, masszázs, reflexológia, táplálkozási tanácsadás, és tudatosságfejlesztés.">
+  <meta name="keywords" content="Ki-Műhely, holisztikus, biorezonancia, NLS, reflexológia, masszázs, reiki, metamorf masszázs, táplálkozási tanácsadás, Szolnok, tudatosság, alternatív terápia, bioinformációs kezelés">
+  <meta name="author" content="Katona Csaba">
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fdd835;
+      background-color: #fff8e1;
       color: #222;
-      text-align: center;
       scroll-behavior: smooth;
     }
 
-    header {
-      padding: 2rem 1rem;
+    body::before {
+      content: "";
+      background: url('ki-muhely_logo_hatter_legeros.png') no-repeat center center;
+      background-size: 60%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      z-index: 0;
+      pointer-events: none;
     }
 
-    .logo {
-      max-width: 250px;
-      height: auto;
+    header {
+      background-color: #5e35b1;
+      height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-text {
+      text-align: center;
+      color: white;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
       margin-bottom: 1rem;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
+    .hero-text p {
+      font-size: 1rem;
       max-width: 700px;
-      margin: 0 auto 2rem;
+      margin: 0 auto;
     }
 
-    section {
-      padding: 3rem 1rem;
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
     }
 
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: #5e35b1;
     }
 
-    .services, .gallery {
+    .gallery {
+      text-align: center;
+    }
+
+    .image-row {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
-    .card {
-      background: #fff;
-      color: #000;
+    .gallery img,
+    .about img {
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+      display: block;
       border-radius: 12px;
-      padding: 1.5rem;
-      width: 280px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .gallery img {
-      width: 280px;
-      height: auto;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 12px 24px;
-      background-color: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .button:hover {
-      background-color: #333;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     footer {
-      padding: 2rem 1rem;
-      background-color: #000;
-      color: #fff;
+      background-color: #5e35b1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.6rem; }
-      .card, .gallery img { width: 90%; }
+    a {
+      color: #5e35b1;
+    }
+
+    .service {
+      margin-bottom: 2rem;
+    }
+
+    .service h3 {
+      color: #5e35b1;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
+<div style="position: relative; z-index: 1;">
 
   <header>
-    <img src="műhely logó ki.jpg" alt="Ki-Műhely logó" class="logo" />
-    <p>Energiával, erővel, tudatossággal, harmóniával – indulj el a belső utadon!</p>
+    <div class="hero-text">
+      <h1>Kí-Műhely</h1>
+      <p>Test-Lélek-Elme - Holisztikus Tudatosság</p>
+    </div>
   </header>
 
-  <section id="services">
-    <h2>Szolgáltatásaim</h2>
-    <div class="services">
-      <div class="card">
-        <h3>NLS állapotfelmérés és kezelés</h3>
-        <p>Modern kvantumtechnológia segítségével térképezzük fel testi-lelki állapotod és támogatjuk az öngyógyító folyamatokat.</p>
-      </div>
-      <div class="card">
-        <h3>Reiki kezelés</h3>
-        <p>Univerzális energiával történő harmonizálás, amely támogatja a belső egyensúlyt és nyugalmat.</p>
-      </div>
-      <div class="card">
-        <h3>Metamorf Masszázs</h3>
-        <p>Finom érintésekkel oldjuk a sejtszintű blokkokat és a múlt lenyomatait a gerinc reflexpontjain keresztül.</p>
-      </div>
-      <div class="card">
-        <h3>Frissítő svédmasszázs és köpölyözés</h3>
-        <p>Izomlazító, vérkeringés-fokozó kezelés, amit a köpöly technika tesz még hatékonyabbá.</p>
-      </div>
-      <div class="card">
-        <h3>Reflexológiás talpmasszázs</h3>
-        <p>A láb reflexzónáin keresztül támogatjuk a szervek működését és az energetikai egyensúlyt.</p>
-      </div>
+  <main>
+    <section class="about">
+  <h2>Rólam</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <div style="flex: 1 1 300px;">
+      <p style="font-weight: 600;">
+        Üdvözöllek, Katona Csabának hívnak. Jelen utamra évekkel ezelőtt először a frissítő masszázzsal léptem, majd később megismerkedtem az energiák világával, a Reikivel, majd később alternatív terápiás vonalom az NLS bioinformációs állapotfelméréssel és kezeléssel. Idő közben világossá vált, hogy a táplálkozás megkerülhetetlen része az egészséges életmódra való törekvésnek, ezért belevágtam a Holisztikus Táplálkozás világába is, amivel személyre szabottan tudok étrendi ajánlást biztosítani a vendégek számára.
+      </p>
     </div>
-  </section>
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="kc.JPEG" alt="Katona Csaba portré – Ki-Műhely" style="max-width: 100%; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" loading="lazy">
+    </div>
+  </div>
+</section>
 
-  
-  <section id="gallery">
-    <h2>Galéria</h2>
-    <div class="gallery">
-      <img src="1.jpg" alt="Galéria kép 1">
-      <img src="2.jpg" alt="Galéria kép 2">
-      <img src="3.jpg" alt="Galéria kép 3">
-    </div>
-  </section>
+
+<section class="why-me">
+  <h2>Miért válassz engem?</h2>
+  <div style="padding: 1rem; border-left: 5px solid #5e35b1; background-color: #f4f0ff; margin-bottom: 2rem;">
+    <h3 style="margin-top: 0;">💡 Többet adok, mint egy kezelés – egy utat kínálok a tudatos gyógyuláshoz ésméletmódhoz.</h3>
+  </div>
+
+  <ul style="list-style: none; padding-left: 0;">
+    <li><strong>🌿 Személyre szabott holisztikus megközelítés:</strong> Minden ember más – ezért a kezelések és tanácsok nálam nem sablon alapján készülnek, hanem a Te állapotodhoz igazodnak.</li><br>
+
+    <li><strong>🧬 NLS állapotfelmérés embernek és állatnak is:</strong> Egyedülálló módon, korszerű bioinformációs technológiával (Biophilia Intruder & Guardian) végzem az energetikai állapotfelmérést – embereknél és házi kedvenceknél is.</li><br>
+
+    <li><strong>🌀 Mély blokkoldás szavak nélkül:</strong> A metamorf masszázs során szelíden, mégis hatékonyan oldódhatnak a tudattalanban rejlő gátak – akár anélkül, hogy elmondanád őket.</li><br>
+
+    <li><strong>🥗 Tudattal táplált étrendi útmutatás:</strong> A holisztikus táplálkozás nem csak a testednek, hanem az elmédnek is szól. </li><br>
+
+    <li><strong>🧘 Több mint testi kezelés – belső ébredés:</strong> A közeljövőben induló tudatosságfejlesztő programjaim segítenek mélyebben megérteni önmagad működését és kapcsolatba kerülni önvalóddal.</li><br>
+
+    <li><strong>🤝 Emberközpontú, őszinte kapcsolat:</strong> Nálam nem egy szolgáltatást kapsz, hanem figyelmet, meghallgatást, és egy olyan környezetet, ahol önmagad lehetsz.</li>
+  </ul>
+
+  <blockquote style="margin-top: 2rem; font-style: italic; color: #5e35b1;">
+    „A test gyógyulása az elme csendjében kezdődik.”
+  </blockquote>
+</section>
+
+  <section class="services">
+  <h2>Szolgáltatások</h2>
+
+  <div class="service">
+    <h3>🌿 NLS állapotfelmérés és kezelés – Biophilia Intruder</h3>
+    <p>
+      Az NLS (Non-Linear System) technológia egy csúcstechnológiás bioinformációs rendszer, amely képes feltérképezni a szervezet információs-energetikai lenyomatát és jelezni az egyensúlytalanságokat még azok fizikai tüneteinek megjelenése előtt. A Biophilia Intruder készülék non-invazív módon vizsgálja a test szöveteit, szerveit, mirigyeit és energetikai pályáit. A kezelés során speciális frekvenciák segítségével képes visszahangolni a diszharmonikus állapotot, támogatva a szervezet önszabályozó és öngyógyító folyamatait. Különösen ajánlott krónikus fáradtság, emésztési panaszok, immunrendszeri problémák vagy lelki eredetű tünetek esetén.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>🐾 NLS állapotfelmérés és kezelés állatok számára (kutya, macska, ló)</h3>
+    <p>
+      Kisállataink egészsége is megérdemli a figyelmet! A Biophilia Guardian eszköz révén stresszmentesen, érintés nélkül térképezhetjük fel házi kedvenceink (pl. kutya, macska, ló) informaciós-energetikai állapotát. A vizsgálat során felismerhetők olyan rejtett zavarok, melyek gyakran elkerülik a hagyományos állatorvosi diagnosztikát. Különösen javasolt idősödő állatoknál, viselkedési problémák, krónikus betegségek, műtétek utáni regeneráció, vagy érzékeny immunrendszer esetén. Az NLS kezelés kíméletes, de hatékony módszer az állatok energetikai egyensúlyának helyreállításához.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>🌀 Metamorf masszázs</h3>
+    <p>
+      A metamorf masszázs egy egyedülálló lelki blokkoldó módszer, amely a születés előtti időszak lenyomatait célozza meg. Finom érintésekkel dolgozik a lábfejen, kézfejen és fejen – azokon a pontokon, amelyek a gerinc reflexzónáit képviselik. A technika képes mély lelki minták, félelmek, visszatartó hiedelmek és generációs lenyomatok oldására, anélkül hogy verbálisan meg kellene nevezni őket. Ideális választás önismereti úton járóknak, belső fejlődést keresőknek, vagy azoknak, akik nehezen találnak kiutat ismétlődő életszituációikból.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>💆‍♀️ Frissítő svédmasszázs és köpölyözés</h3>
+    <p>
+      A svédmasszázs egy klasszikus nyugati masszázsforma, amely az izmok átdolgozásán keresztül segíti elő a testi és lelki ellazulást. A kezelés során alkalmazott köpölyözés a vákuum hatása révén javítja a vérkeringést, segít a letapadt izmok fellazításában, valamint gyorsítja a méreganyagok távozását. A kezelés során a vendég új energiával töltődik fel, megszűnhetnek a hát-, nyak-, derékfájdalmak, és csökken a stressz-szint. Kiváló választás ülőmunkát végzőknek, sportolóknak, vagy bárkinek, aki feszültségtől, kimerültségtől szenved.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>🦶 Reflexológiás talpmasszázs</h3>
+    <p>
+      A reflexológia a talpon található zónák ingerlésével segít az egész szervezet harmonizálásában. Minden szervnek és szervrendszernek megvan a megfelelő reflexpontja a lábfejen, így a kezelés célzott módon serkenti a test öngyógyító folyamatait. Rendszeres reflexmasszázs támogatja az emésztést, az anyagcserét, az idegrendszer működését, csökkenti a hormonális problémákat, és javítja az alvás minőségét. Ajánlott azoknak, akik természetes módon szeretnék javítani egészségi állapotukat.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>🥗 Holisztikus Táplálkozási Tanácsadás</h3>
+    <p>
+      A test-lélek szoros kapcsolatban áll egymással – így az étkezés is túlmutat a kalóriákon. A holisztikus táplálkozási tanácsadás célja, hogy az egyén alkatát, aktuális testi-lelki állapotát, életmódját és tudatossági szintjét figyelembe véve alakítsunk ki egy olyan táplálkozási rendszert, amely nemcsak táplál, de gyógyít is. A tanácsadás során személyre szabott javaslatokat kapsz a napi ritmusodhoz illő étrend kialakításához, ételtípusokhoz, energetikai hatásokhoz, valamint alternatív szempontokat is beépítek, mint pl. hormon és anyagcsere típus szerinti tanácsadás.
+    </p>
+  </div>
+
+  <div class="service">
+    <h3>🧠 A tudatosság alapjai – Hamarosan</h3>
+    <p>
+      Egy önismereti, önfejlesztő program, amely abban segít, hogy közelebb kerülj önmagadhoz, felismerd a tudattalan működési mintáidat, és képes legyél azokat tudatos jelenléttel átalakítani. A program során szó lesz a tudatszintekről, félelmek átalakításáról, megbocsátásról, és arról, hogyan teremthető meg a belső szabadság. A cél, hogy megértsd: a külvilág csupán a belső világ tükröződése. A gyakorlati és elméleti elemek egyaránt segítenek az életed új nézőpontból való megélésében.
+    </p>
+  </div>
+</section>
+
+
+    <section class="pricelist">
+      <h2>Árlista</h2>
+      <ul>
+        <li><strong>Frissítő Reflexológiás Talpmasszázs – 60 perc:</strong> 6.000 Ft</li>
+        <li><strong>Frissítő svéd masszázs és köpölyözés:</strong><br>– 60 perc: 6.000 Ft<br>– 90 perc: 8.000 Ft</li>
+        <li><strong>NLS Állapotfelmérés, Konzultáció, Első kezelés:</strong> 15.000 Ft</li>
+        <li><strong>NLS kezelés Helyben:</strong> 7.000 Ft</li>
+        <li><strong>NLS Kiszállás házhoz:</strong> egyeztetés után</li>
+        <li><strong>NLS Távkezelés:</strong> egyeztetés után</li>
+        <li><strong>Homeopátiás szer készítése:</strong> 1.800 Ft / 50ml</li>
+        <li><strong>Metamorf masszázs – 60 perc:</strong> 5.000 Ft</li>
+	<li><strong>Holisztikus Táplálkozási Tanácsadás:</strong><br>– Egyéni Konzultáció: 15.000 Ft<br>– Személyre szabott étrendterv: 20.000 Ft<br>– Havi/Bérlet csomagok megegyezés szerint</li>
+
+      </ul>
+    </section>
+
+   <section class="gallery">
+      <h2>Galéria</h2>
+      <div class="image-row">
+        <img src="1.jpg" alt="Biorezonancia eszköz: Biophilia Intruder" loading="lazy" />
+        <img src="2.JPEG" alt="Kezelőhelyiség belső tér" loading="lazy" />
+        <img src="3.JPEG" alt="Tanúsítványok" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Elérhetőség</h2>
+      <p>📍 Szolnok</p>
+      <p>📞 +36 30 300 0293</p>
+      <p>📧 <a href="mailto:muhelyki@gmail.com">muhelyki@gmail.com</a></p>
+      <p>🔗 <a href="https://www.facebook.com/profile.php?id=61560905311555" target="_blank">Facebook oldal</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>📍 Elérhetőség: Szolnok | 📞 +36 30 300 0293 | ✉️ muhelyki@gmail.com</p>
-    <a class="button" href="https://www.facebook.com/profile.php?id=61560905311555" target="_blank">Facebook oldal</a>
+    © 2025 Ki-Műhely – Holisztikus Tudatosság
   </footer>
 
+</div>
 </body>
 </html>
